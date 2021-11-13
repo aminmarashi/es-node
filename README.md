@@ -1,4 +1,4 @@
-# es-node
+# evanw
 
 This is a helper command to run TypeScript applications easily using [esbuild](https://esbuild.github.io/).
 
@@ -15,10 +15,10 @@ It does not come with `esbuild` itself, so you would have to install that separa
 npm install -g esbuild
 ```
 
-Then you can go ahead and install `es-node`
+Then you can go ahead and install `evanw`
 
 ```bash
-npm install -g es-node
+npm install -g evanw
 ```
 
 ## Running
@@ -26,7 +26,7 @@ npm install -g es-node
 Now you can run TypeScript applications the same way you would run them with node, all the node options are also available.
 
 ```bash
-es-node /path/to/file.ts
+evanw /path/to/file.ts
 ```
 
 ## Changing esbuild options
@@ -35,12 +35,16 @@ By default the options used for building the app are `--bundle` and `--platform=
 
 ```bash
 export ESBUILD_OPTIONS='--bundle --platform=node --outfile=x.js'
-es-node /path/to/file.ts
+evanw /path/to/file.ts
 ```
 
 ## Reasoning
 
 I created this script mostly because it's a common use-case for me to build and run TypeScript applications, there are other solutions that work perfectly fine (e.g. `ts-node`), however the performance gain by `esbuild` tempted me to have this command with `esbuild`.
+
+## Name
+
+Initially I called this script `es-node`, but because a package existed with a similar name, NPM didn't allow me to publish that, so I decided to name this after the creator of `esbuild`, [Evan W.](https://github.com/evanw), I hope he doesn't mind :)
 
 ## Contributions
 
