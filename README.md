@@ -2,9 +2,19 @@
 
 This is a helper command to run TypeScript applications easily using [esbuild](https://esbuild.github.io/).
 
-`esbuild` is super fast and makes it possible to build and run TypeScript files on the fly.
+`esbuild` is super fast and makes it possible to build and run TypeScript files on the fly. Even though I use this mainly for TypeScript, there are more languages supported by `esbuild`, you can find the list in their website (link above).
 
 This is mostly useful for running one time scripts and testing things locally, and it is **not recommended** to use this module in production.
+
+## Usage without installation
+
+Using `npx` you don't need to install anything, run your application right away:
+
+```bash
+npx evanw /path/to/file.ts
+```
+
+If you don't want to use `npx` follow the installation section.
 
 ## Installation
 
