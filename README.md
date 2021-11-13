@@ -26,8 +26,7 @@ npm install --save-dev evanw
 
 ```json
   "scripts": {
-    ...
-    "build": "evanw ./tests"
+    "test": "evanw ./tests"
   },
 ```
 
