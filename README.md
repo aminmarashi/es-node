@@ -14,11 +14,26 @@ Using `npx` you don't need to install anything, run your application right away:
 npx evanw /path/to/file.ts
 ```
 
-If you don't want to use `npx` follow the installation section.
+If you don't want to use `npx` follow the global installation section.
 
-## Installation
+## Usage inside npm scripts
 
-It does not come with `esbuild` itself, so you would have to install that separately using your favorite package manager.
+You can install `evanw` as a development dependency and use it in your npm scripts.
+
+```bash
+npm install --save-dev evanw
+```
+
+```json
+  "scripts": {
+    ...
+    "build": "evanw ./tests"
+  },
+```
+
+## Global installation
+
+`evanw` does not come with `esbuild` itself, so you would have to install that separately using your favorite package manager.
 
 ```bash
 # you can do this with npm

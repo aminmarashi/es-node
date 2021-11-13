@@ -1,11 +1,12 @@
 {
   "name": "evanw",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Run your typescript applications directly using esbuild",
   "main": "index.js",
   "bin": "index.js",
   "scripts": {
-    "build": "esbuild --bundle --platform=node index.ts --outfile=index.js"
+    "build": "esbuild --bundle --platform=node index.ts --outfile=index.js",
+    "prepublishOnly": "npm install && npm run build"
   },
   "author": "Amin Marashi",
   "license": "GPLv3",

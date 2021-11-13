@@ -17,6 +17,10 @@ const nodeArgs = args.filter(arg => {
   }
 });
 
+if (!filename) {
+  throw Error('Please specify a filename to run');
+}
+
 if (!existsSync(filename)) {
   throw Error(`Cannot find the file to run: ${filename}`);
 }
