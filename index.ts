@@ -7,16 +7,16 @@ const maxBuffer = process.env.JS_MAX_BUFFER || 1024^2 * 20; // 20 MB
 const args = process.argv.slice(2);
 let filename;
 
-
 const nodeArgs = args.filter(arg => {
   if (arg[0] !== '-') {
-    debugger;
     if (filename) {
-      throw Error(`Invalid options, only one option cannot start with a '-', options: ${args.join(', ')}`)
+      throw Error(`Invalid options, only one option can not start with a '-', options: ${args.join(', ')}`)
     } else {
       filename = arg;
+      return false;
     }
   }
+  return true;
 });
 
 if (!filename) {
