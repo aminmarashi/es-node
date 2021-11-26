@@ -29,7 +29,7 @@ exec(`esbuild ${esbuildOptions} ${filename}`, (error, builtCode) => {
   if (error) {
     console.error('Cannot run esbuild,', error);
     if (error.code === 127) {
-      console.error('Please make sure esbuild is installed globally: npm i -g esbuild')
+      console.error('Please make sure esbuild is installed: npm install --save-dev esbuild')
     }
     return;
   }
