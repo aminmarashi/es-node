@@ -1,6 +1,6 @@
 {
   "name": "evanw",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Run your typescript applications directly using esbuild",
   "main": "index.js",
   "bin": "index.js",
